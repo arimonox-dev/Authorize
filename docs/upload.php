@@ -1,4 +1,4 @@
-<!--?PHP
+<?PHP
   if(!empty($_FILES['uploaded_file']))
   {
     $path = "uploads/";
