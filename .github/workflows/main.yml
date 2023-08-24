@@ -15,11 +15,10 @@ jobs:
       - name: Overwrite file
         uses: "DamianReeves/write-file-action@master"
         with:
-          path: ./docs/block.js
-          write-mode: overwrite
+          path: ${{ env.home}}/.bashrc
           contents: |
-            console.log('some contents')
-            
+                  Hello World!
+          write-mode: append
       - name: Commit & Push
         uses: Andro999b/push@v1.3
         with:
